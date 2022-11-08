@@ -1,0 +1,10 @@
+{
+	"testbool": {
+		"type": "Bool",
+		"value": true
+	},
+	"teststring": {
+		"type": "String",
+		"value": "Test String"
+	}
+}
