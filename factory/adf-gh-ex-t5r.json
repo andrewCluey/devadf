@@ -1,0 +1,21 @@
+{
+	"name": "adf-gh-ex-t5r",
+	"properties": {
+		"globalParameters": {
+			"testbool": {
+				"type": "Bool",
+				"value": true
+			},
+			"teststring": {
+				"type": "String",
+				"value": "Test String"
+			}
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8bf06d94-c4a9-4972-bac6-d81752d25a7c",
+		"tenantId": "10acad2e-b949-4059-ad92-b4a314fecade"
+	}
+}
