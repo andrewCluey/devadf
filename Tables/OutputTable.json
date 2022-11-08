@@ -1,0 +1,24 @@
+{
+  "name": "OutputTable",
+  "properties": {
+    "type": "AzureBlob",
+    "linkedServiceName": "AzureStorageLinkedService",
+    "typeProperties": {
+      "folderPath": "<blob container>/httpDownloadDataIn/{Slice}/",
+      "partitionedBy": [
+        {
+          "name": "Slice",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "yyyyMMddHHmm"
+          }
+        }
+      ]
+    },
+    "availability": {
+      "frequency": "Hour",
+      "interval": 1
+    }
+  }
+}
